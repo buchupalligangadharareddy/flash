@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="com.w2a.base.TestBase"/>
+      <class name="com.w2a.testcases.LoginTest"/>
+      <class name="com.w2a.rough.TestProperties"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.w2a.testcases.LoginTest">
+        <methods>
+          <include name="loginAsBankManager"/>
+        </methods>
+      </class> <!-- com.w2a.testcases.LoginTest -->
+      <class name="com.w2a.base.TestBase">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.w2a.base.TestBase -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
